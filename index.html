@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu propio formulario acordeón</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="acordeon.css">
+
+</head>
+<body>
+    <main>
+        <h1>Crea tu formulario acordeón</h1>
+        <div id="generarItem" class="cuestionario">
+            <h2>Crea el Item</h2>
+            <div id="titulo">
+                <label for="tituloItem" class="enunciado">Ingresa el titulo del Item:</label>
+                <input type="text" onfocusout="chequearTitulo()" name="tituloItem" id="tituloItem" class="inputText" placeholder="Titulo">
+            </div>
+            <div id="contenido">
+                <label for="contenidoItem">Ingresá el contenido del Item:</label>
+                <textarea name="contenidoItem" onfocusout="chequearContenido()" id="contenidoItem" cols="30" rows="10" placeholder="el contenido que se quiere ver al descender el acordeón"></textarea>
+            </div>
+            <div class="contendorBotones">
+                <a href="" class="btnCuestionario" id="btnGenerarItem">Agregar Item al acordeón</a>
+                <a href="" class="btnCuestionario" id="btnBorrarTexto">Borrar texto</a>
+                <a href="" class="btnCuestionario" id="btnEliminarAcordeon">Eliminar acordeón</a>
+            </div>
+        </div>
+        <div id="acordeon" class="cuestionario">
+            <h2>Acordeon:</h2>
+           <!-- ACA INGRESA EL ACORDEÓN POR CSS -->
+           <div id="contenedorAcordeon">
+
+           </div>
+        </div>
+        <div class="cuestionario">
+            <h2>HTML:</h2>
+            <div class="contenedorCodigo">
+                <p id="textoCodigoHtml">
+
+                </p>
+            </div>
+            <a href="" id="btnCopiarHTML" class="btnCuestionario btnSolo">Copiar Codigo HTML</a>
+        </div>
+        <div class="cuestionario">
+            <h2>CSS:</h2>
+            <div class="contenedorCodigo">
+                <p id="textoCodigoCss">
+
+                </p>
+            </div>
+            <a href="" id="btnCopiarCSS" class="btnCuestionario btnSolo">Copiar Codigo CSS</a>
+        </div>
+        <div class="cuestionario">
+            <h2>JS:</h2>
+            <div class="contenedorCodigo">
+                <p id="textoCodigoJs">
+
+                </p>
+            </div>
+            <a href="" id="btnCopiarJS" class="btnCuestionario btnSolo">Copiar Codigo JavaScript</a>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="acordeon.js"></script>
+
+</body>
+</html>
